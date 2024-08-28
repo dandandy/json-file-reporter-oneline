@@ -49,7 +49,7 @@ function Reporter (runner, options) {
       passes: passes.map(clean)
     }
     runner.testResults = obj
-    const json = JSON.stringify(obj, null, 2)
+    const json = JSON.stringify(obj)
     let path = DEFAULT_REPORT_PATH
     const { reporterOptions } = options
     if (reporterOptions) {
